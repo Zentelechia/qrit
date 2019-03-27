@@ -1,0 +1,54 @@
+<template name="results">
+  <div id="qrcode"></div>
+  {{#with form}}
+  <div id="charts"></div>
+  <div style="float: left; width: 100%;">
+    <h3><i>{{title}}</i></h3>
+    <h5>Кол-во собранной обратной связи: {{results.length}}</h5>
+  </div>
+  {{#if c _id}}
+  <table>
+    <tr>
+      <td id="charts">
+      </td>
+    </tr>
+  </table>
+  {{/if}}
+  <p></p>
+  {{/with}}
+  <table>
+    <thead>
+      <tr>
+        {{#each form.content}}
+        <th>
+          {{removeQ title}}
+        </th>
+        {{/each}}
+      </tr>
+    </thead>
+
+    {{#each results}}
+    <tr>
+      {{#each answers}}
+      <td>{{this}}</td>
+      {{/each}}
+    </tr>
+
+    {{/each}}
+    {{charts}}
+  </table>
+
+  <div class="fixed-action-btn horizontal click-to-toggle">
+    <a class="btn-floating btn-large red">
+      <i class="material-icons blue">menu</i>
+    </a>
+    <ul>
+      <li><a id="public" class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+      <li><a id="remove" class="btn-floating magenta"><i class="material-icons">delete</i></a></li>
+    </ul>
+  </div>
+</template>
+
+<template name="newForm">
+  <div id="newForm"></div>
+</template>

@@ -1,0 +1,15 @@
+{
+  "name": "backend",
+  "private": true,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "antd": "^3.15.2",
+    "babel-runtime": "^6.26.0",
+    "indexof": "0.0.1",
+    "meteor-node-stubs": "^0.3.2",
+    "react": "^16.8.5",
+    "react-dom": "^16.8.5"
+  }
+}

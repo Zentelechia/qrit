@@ -1,0 +1,53 @@
+/* CSS declarations go here */
+html, body {
+  background-color: #188fff50;
+  margin: 0px;
+  padding: 0px;
+  height: 100vh;
+}
+.lo {
+  color: #1890ff;
+  font-weight: 700;
+  font-size: 10vh;
+}
+.gr {
+  color: #777;
+}
+
+nav {
+  height: 10vh;
+}
+#left {
+  margin-top: 0px;
+  overflow-y: scroll;
+  float: left;
+  width: 20vw;
+  height: 90vh;
+  padding-bottom: 50px;
+}
+
+#main {
+  padding: 10px !important;
+  background-color: white;
+  overflow-y: scroll;
+  /* float: left; */
+  /* width: 75vw; */
+  padding: 0px;
+  height: 90vh;
+}
+.brand-logo {
+  margin-left: 10px;
+}
+.info {
+  text-align: center;
+  font-size: 5vh;
+  position: absolute;
+  top: 35vh;
+  left: 50vw;
+  width: 80vw;
+  margin-left: -40vw;
+}
+.platforms {
+  width: 200px;
+  opacity: 0.5;
+}

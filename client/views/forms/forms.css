@@ -1,0 +1,12 @@
+.form_title:hover {
+  cursor: pointer;
+  background-color: blue;
+}
+.form_title {
+  padding: 5px;
+}
+#addForm {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}

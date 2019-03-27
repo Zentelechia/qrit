@@ -1,0 +1,40 @@
+<head>
+  <title>QRity</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+{{> navbar}}
+</body>
+
+<template name="navbar">
+  <nav>
+   <div class="nav-wrapper blue">
+     <a href="/" class="brand-logo">QRity</a>
+     <ul id="nav-mobile" class="right hide-on-med-and-down">
+       <li><a href="/my">Мои опросы</a></li>
+       <li><a>{{> loginButtons}}</a></li>
+     </ul>
+   </div>
+ </nav>
+</template>
+
+<template name="Double">
+    <div class="card-panel blue lighten-3" id="left">
+          {{> yield region="left"}}
+    </div>
+    <div id="main">
+    	  {{> yield}}
+    </div>
+</template>
+
+<template name="Full">
+  {{> yield}}
+</template>
+<template name="about">
+  <div class="info">
+     <img style="margin-top: 40px;" height="80px" src="/logo_q.png"><span style="line-height:80px" class="lo">Rity</span><br>
+       <span class="gr">платформа для мгновенного сбора и<br>анализа обратной связи от сотрудников компании</span><br>
+       <img class="platforms" src="/platforms.png">
+  </div>
+</template>

@@ -1,0 +1,7 @@
+<template name="forms">
+  <input class="search" placeholder="поиск" type="text">
+  {{#each forms}}
+    <div class="form_title" id="{{_id}}">{{title}} ({{c _id}})</div>
+  {{/each}}
+   <a id="addForm" class="btn-floating btn-large waves-effect waves-light red" style="opacity: 0.8"><i class="material-icons blue darker-2">add</i></a>
+</template>

@@ -1,0 +1,13 @@
+#qrcode {
+  margin: 10px;
+}
+.frame {
+  border: none;
+  width: 80vw;
+  height: 90vh;
+}
+[class*='ct-chart']{
+  width: 33%;
+  float: left;
+  text-align: center;
+}
