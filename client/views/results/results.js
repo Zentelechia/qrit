@@ -106,8 +106,6 @@ Template.results.helpers({
           new Chartist.Pie('.ct-chart', data, options, responsiveOptions);
         }
 
-    $('#qrcode canvas').remove();
-   
     return results.find({
       form_id: Session.get("form_id")
     }).fetch().reverse();
