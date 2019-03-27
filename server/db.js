@@ -7,5 +7,5 @@ Meteor.publish("forms",function(){
 });
 
 Meteor.publish("results_by_form_id",function(form_id){
-  return resultsfind();
+  return results.find();
 });

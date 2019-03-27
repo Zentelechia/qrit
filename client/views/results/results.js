@@ -43,7 +43,7 @@ Template.results.helpers({
       if (f && f.content) {
         var content = f.content;
         //console.log(content);
-        var rr = resultsfind({
+        var rr = results.find({
           form_id: Session.get("form_id")
         }).fetch();
 
