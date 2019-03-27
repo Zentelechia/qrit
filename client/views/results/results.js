@@ -76,7 +76,7 @@ Template.results.helpers({
     }
   },
   results() {
-        var rr=resultsfind({form_id: Session.get("form_id")}).fetch();
+        var rr=results.find({form_id: Session.get("form_id")}).fetch();
 
         var data = {
           labels: ['Bananas', 'Apples', 'Grapes'],
@@ -108,7 +108,7 @@ Template.results.helpers({
 
     $('#qrcode canvas').remove();
    
-    return resultsfind({
+    return results.find({
       form_id: Session.get("form_id")
     }).fetch().reverse();
   },

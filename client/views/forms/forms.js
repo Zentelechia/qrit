@@ -1,5 +1,5 @@
 UI.registerHelper('c',function(id){
-  return resultsfind({form_id: id}).count();
+  return results.find({form_id: id}).count();
 })
 Template.forms.helpers({
   forms: function(){
