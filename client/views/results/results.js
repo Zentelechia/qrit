@@ -43,7 +43,7 @@ Template.results.helpers({
       if (f && f.content) {
         var content = f.content;
         //console.log(content);
-        var rr = Results.find({
+        var rr = resultsfind({
           form_id: Session.get("form_id")
         }).fetch();
 
@@ -76,7 +76,7 @@ Template.results.helpers({
     }
   },
   results() {
-        var rr=Results.find({form_id: Session.get("form_id")}).fetch();
+        var rr=resultsfind({form_id: Session.get("form_id")}).fetch();
 
         var data = {
           labels: ['Bananas', 'Apples', 'Grapes'],
@@ -108,7 +108,7 @@ Template.results.helpers({
 
     $('#qrcode canvas').remove();
    
-    return Results.find({
+    return resultsfind({
       form_id: Session.get("form_id")
     }).fetch().reverse();
   },
